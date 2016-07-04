@@ -1,3 +1,7 @@
+<% if flash[:notice] %>
+<div class="alert alert-success" role="alert"><%= flash[:notice] %></div>
+<% end %>
+
 <div class="container">
 
 <h1>Gustavo Sebastian Elizalde</h1>
@@ -5,7 +9,7 @@
 
 
 <h2>Formulario de registro</h2>
-<form action="" method="post">
+<form action="<%= pages_x_path %>" method="get">
 	
 	<label for="nombre">Nombre:<br>
 		<input type="text" name="nombre" id="nombre">
@@ -22,5 +26,17 @@
 	<input type="submit" value="Enviar">
 
 </form>
+
+<% if @all_users %>
+
+<h3>Usuarios registrados</h3>
+
+<ul>
+	<% @all_users.each do |user| %>
+	<li><strong>Nombre:</strong> <%= user.nombre %> - <strong>Email:</strong> <%= user.email %> - <strong>Edad:</strong> <%= user.edad %> - </li>
+	<% end %>
+</ul>
+
+<% end %>
 
 </div>
