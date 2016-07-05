@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require scrollreveal.js
+//= require jquery.magnific-popup.js
+//= require creative.js
