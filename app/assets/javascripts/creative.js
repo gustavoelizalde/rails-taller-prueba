@@ -1,4 +1,5 @@
-(function($) {
+$(document).on('turbolinks:load', function(){
+
     "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -61,4 +62,4 @@
         }
     });
 
-})(jQuery); // End of use strict
+}) // End of use strict
