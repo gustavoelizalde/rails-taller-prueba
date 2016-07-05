@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def x
+
   	@nombre = params[:nombre]
   	@email = params[:email]
   	@edad = params[:edad].to_i
@@ -20,6 +21,6 @@ class PagesController < ApplicationController
   end
 
   def landing
-
+  	render :layout => 'layouts/layout2'
   end
 end
