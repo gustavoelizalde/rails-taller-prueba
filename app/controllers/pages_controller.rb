@@ -17,6 +17,9 @@ class PagesController < ApplicationController
 	  			notice: "El Usuario No ha sido guardado"
 	  	end
 	end
+  end
+
+  def landing
 
   end
 end
